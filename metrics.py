@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Authors  : Nairouz Mrabah (mrabah.nairouz@courrier.uqam.ca) & Fawzi Touati (touati.mohamed_fawzi@courrier.uqam.ca)
-# @Link    : github.com/nairouz/GMM_VGAE
-# @Paper   : Beyond the Evidence Lower Bound: A Contrastive Variatonal Graph Auto-Encoder for Attributed Graph Clustering
-
+# @Authors  : Nairouz Mrabah (mrabah.nairouz@courrier.uqam.ca)
 # @License : MIT License
 
 import numpy as np
