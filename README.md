@@ -7,7 +7,7 @@ Variational Graph Auto-Encoders (VGAEs) have been widely used to solve the node 
 ## Conceptual design
 
 <p align="center">
-<img align="center" src="https://github.com/nairouz/CVGAE_PR/tree/main/model_CVGAE">
+<img align="center" src="https://github.com/nairouz/CVGAE_PR/blob/main/images/model_CVGAE.png">
 </p>
 
 ## Some results
