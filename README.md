@@ -1,4 +1,4 @@
-# CVGAE (A Contrastive Variational Graph Auto-Encoder for Node Clustering)
+# A Contrastive Variational Graph Auto-Encoder for Node Clustering (CVGAE)
 
 ## Abstract
 
