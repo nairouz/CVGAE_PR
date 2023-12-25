@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Authors : Nairouz Mrabah (mrabah.nairouz@courrier.uqam.ca) 
-# @Link    : github.com/nairouz/CVGAE
-# @Paper   : Beyond the Evidence Lower Bound: A Contrastive Variatonal Graph Auto-Encoder for Attributed Graph Clustering
 # @License : MIT License
 
 import os
@@ -295,7 +293,7 @@ class CVGAE(nn.Module):
         Loss_sep = torch.mean(torch.log(1 + torch.mean(torch.exp(-KL_neg), dim=1)), dim=0)
         return Loss_sep
 
-    def pretrain(self, features, adj_norm, adj_label, y, weight_tensor, norm, optimizer="Adam", epochs=200, lr=0.01, save_path="/home/mrabah_n/code/CVGAE/results/", dataset="Cora"):
+    def pretrain(self, features, adj_norm, adj_label, y, weight_tensor, norm, optimizer="Adam", epochs=200, lr=0.01, save_path="./CVGAE/results/", dataset="Cora"):
         if optimizer == "SGD":
             opti = SGD(self.parameters(), lr=lr, momentum=0.9, weight_decay = 0.001)
         elif optimizer == "RMSProp":
@@ -379,7 +377,7 @@ class CVGAE(nn.Module):
         print("Best accuracy : ", acc_best)  
         return y_pred_best, y
     
-    def train(self, features, adj_norm, adj_label, adj, y, weight_tensor, norm, optimizer="Adam", epochs=200, lr=0.01, beta_1=0.3, beta_2=0.15, save_path="/home/mrabah_n/code/CVGAE/results/", dataset="Cora"):
+    def train(self, features, adj_norm, adj_label, adj, y, weight_tensor, norm, optimizer="Adam", epochs=200, lr=0.01, beta_1=0.3, beta_2=0.15, save_path="./CVGAE/results/", dataset="Cora"):
         self.load_state_dict(torch.load(save_path + dataset + '/pretrain/model_pretrain.pk'))
         if optimizer == "Adam":
             opti = Adam(self.parameters(), lr=lr)
