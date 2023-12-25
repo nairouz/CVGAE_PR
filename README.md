@@ -10,7 +10,14 @@ Variational Graph Auto-Encoders (VGAEs) have been widely used to solve the node 
 <img align="center" src="https://github.com/nairouz/CVGAE_PR/blob/main/images/model_CVGAE.png">
 </p>
 
-## Some results
+## Objective Function
+
+<p align="center">
+<img align="center" src="https://github.com/nairouz/CVGAE_PR/blob/main/images/Equation.png">
+</p>
+
+
+## Some Results
 
 ### Quantitative 
 <p align="center">
