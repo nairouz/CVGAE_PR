@@ -7,22 +7,22 @@ Variational Graph Auto-Encoders (VGAEs) have been widely used to solve the node 
 ## Conceptual design
 
 <p align="center">
-<img align="center" src="">
+<img align="center" src="https://github.com/nairouz/CVGAE_PR/blob/master/image_2.png">
 </p>
 
 ## Some results
 
 ### Quantitative 
 <p align="center">
-<img align="center" src="https://github.com/nairouz/R-GAE/blob/master/image_3.png" >
+<img align="center" src="https://github.com/nairouz/CVGAE_PR/blob/master/image_3.png" >
 </p>
 <p align="center">
-<img align="center" src="https://github.com/nairouz/R-GAE/blob/master/image_4.png" >
+<img align="center" src="https://github.com/nairouz/CVGAE_PR/blob/master/image_4.png" >
 </p>
 
 ### Qualitative 
 <p align="center">
-<img align="center" src="https://github.com/nairouz/R-GAE/blob/master/image_1.png">
+<img align="center" src="https://github.com/nairouz/CVGAE_PR/blob/master/image_1.png">
 </p>
 
 ## Usage
