@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Authors : Nairouz Mrabah (mrabah.nairouz@courrier.uqam.ca) 
-# @Link    : github.com/nairouz/CVGAE
-# @Paper   : Beyond the Evidence Lower Bound: A Contrastive Variatonal Graph Auto-Encoder for Attributed Graph Clustering
 # @License : MIT License
 
 import numpy as np
@@ -61,12 +59,12 @@ def plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=None,
     plt.tight_layout()
     plt.ylabel('True label')
     plt.xlabel('Predicted label \n accuracy={:0.4f}; misclass={:0.4f}'.format(accuracy, misclass))
-    plt.savefig("/home/mrabah_n/code/CVGAE/results/Pubmed/train/confusion_matrix.png")
+    plt.savefig("./CVGAE/results/Pubmed/train/confusion_matrix.png")
 
 # Dataset Name
 dataset = "Pubmed"
 print("Pubmed dataset")
-adj, features, labels = load_data('pubmed', '/home/mrabah_n/code/CVGAE/data/Pubmed')
+adj, features, labels = load_data('pubmed', './CVGAE/data/Pubmed')
 nClusters = 3
 
 # Network parameters
@@ -76,7 +74,7 @@ gamma_2 = 1.
 gamma_3 = 1.
 num_neurons = 32
 embedding_size = 16
-save_path = "/home/mrabah_n/code/CVGAE/results/"
+save_path = "./CVGAE/results/"
 
 # Some preprocessing
 adj = adj - sp.dia_matrix((adj.diagonal()[np.newaxis, :], [0]), shape=adj.shape)
