@@ -47,7 +47,7 @@ python3 ./CVGAE/main_cora.py
 
 ## Built With
 
-All the required libraries are provided in the ```requirement.txt``` file. The code is buildt with:
+The code is built with:
 
 * Python 3.6
 * Pytorch 1.7.0
